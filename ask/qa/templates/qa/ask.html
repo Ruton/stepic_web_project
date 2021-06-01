@@ -1,0 +1,7 @@
+{% extends "qa/base.html" %}
+{% block title %}Ask{% endblock %}
+
+{% block content %}
+    {% csrf_token %}
+    {{ form.as_p }}
+{% endblock %}
